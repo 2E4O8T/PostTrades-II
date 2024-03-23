@@ -26,4 +26,8 @@
       <Folder Include="Migrations\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Compile Remove="Repositories\ICurvePointRepository.cs" />
+    </ItemGroup>
+
 </Project>
