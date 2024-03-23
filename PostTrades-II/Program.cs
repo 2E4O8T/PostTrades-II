@@ -11,6 +11,10 @@ builder.Services.AddDbContext<PostTradesDbContext>(option =>
 builder.Services.AddControllers();
 
 builder.Services.AddScoped<IBidRepository, BidRepository>();
+builder.Services.AddScoped<ICurvePointRepository, CurvePointRepository>();
+builder.Services.AddScoped<IRatingRepository, RatingRepository>();
+builder.Services.AddScoped<IRuleNameRepository, RuleNameRepository>();
+builder.Services.AddScoped<ITradeRepository, TradeRepository>();
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
